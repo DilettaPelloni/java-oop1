@@ -18,8 +18,10 @@ public class Main {
         //stampo anche il prezzo ivato e il nome completo
         System.out.println("Prezzo ivato: " + new DecimalFormat("###,###.00€").format(product1.getPrezzoIvato()));
         System.out.println("Nome completo: " + product1.getNomeCompleto());
+        //BONUS
+        System.out.println("Codice di 8 cifre: " + product1.getCodicePad());
 
-        //spazio
+        //Spazio
         System.out.println("\n---\n");
 
         //Modifico i campi modificabili

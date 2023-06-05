@@ -14,7 +14,8 @@ public class Prodotto {
 
     //COSTRUTTORE
     public Prodotto(String nome, String descrizione, double prezzo, int iva) {
-        this.codice = new Random().nextInt(0, 100000000);
+//        this.codice = new Random().nextInt(0, 100000000);
+        this.codice = new Random().nextInt(0, 1000); //rimpicciolisco il range per far uscire numeri con meno di 8 cifre
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
@@ -67,6 +68,16 @@ public class Prodotto {
         System.out.println("Aliquota IVA: " + iva + "%");
         System.out.println("Prezzo ivato: " + new DecimalFormat("###,###.00€").format(getPrezzoIvato()));
         System.out.println("Nome completo: " + getNomeCompleto());
+        //BONUS
+        System.out.println("Codice di 8 cifre: " + getCodicePad());
+    }
+    //BONUS
+    public String getCodicePad() {
+        String codiceStringa = Integer.toString(codice);
+        while (codiceStringa.length() < 8) {
+            codiceStringa = 0 + codiceStringa;
+        }
+        return codiceStringa;
     }
 
 }

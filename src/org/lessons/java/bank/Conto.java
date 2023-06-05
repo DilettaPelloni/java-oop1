@@ -41,7 +41,7 @@ public class Conto {
         if(somma > 0) {
             saldo += somma;
             System.out.println("Importo versato correttamente");
-            System.out.println("Saldo aggiornato: " + saldo + "\n");
+            System.out.println("Saldo aggiornato: " + getSaldoFormattato() + "\n");
         } else if(somma == 0) {
             System.out.println("Hai inserito 0. Nessun importo è stato versato\n");
         } else {
@@ -54,10 +54,10 @@ public class Conto {
         } else if(somma <= saldo) {
             saldo -= somma;
             System.out.println("Importo prelevato correttamente");
-            System.out.println("Saldo aggiornato: " + saldo + "\n");
+            System.out.println("Saldo aggiornato: " + getSaldoFormattato() + "\n");
         } else {
             System.out.println("Stai cercando di prelevare una somma maggiore del saldo disponibile!\nOPERAZIONE ANNULLATA");
-            System.out.println("Saldo disponibile: " + saldo + "\n");
+            System.out.println("Saldo disponibile: " + getSaldoFormattato() + "\n");
         }
     }
 

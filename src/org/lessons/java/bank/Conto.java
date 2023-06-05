@@ -37,6 +37,11 @@ public class Conto {
     public String getSaldoFormattato() {
         return new DecimalFormat("#,###.00€").format(saldo);
     }
+
+    //Per semplicità, nei metodi seguenti ho fatto stampare direttamente il messaggio di esito,
+    //ma è sempre meglio restituire solamente un codice che identifichi l'esito e lasciare che questo venga stampato da un'altra parte.
+    //È giusto anche creare una classe OperationResult che contenga i dati relativi all'esito(codice, messaggio, ecc.) e restituire un'istanza di questa.
+
     public void versaSomma(double somma) {
         if(somma > 0) {
             saldo += somma;

@@ -57,6 +57,7 @@ public class Conto {
             System.out.println("Saldo aggiornato: " + saldo + "\n");
         } else {
             System.out.println("Stai cercando di prelevare una somma maggiore del saldo disponibile!\nOPERAZIONE ANNULLATA\n");
+            System.out.println("Saldo disponibile: " + saldo + "\n");
         }
     }
 

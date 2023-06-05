@@ -12,7 +12,7 @@ public class Conto {
 
     //COSTRUTTORE
     public Conto(String nomeProprietario) {
-        this.numeroConto = new Random().nextInt(0, 1001);
+        this.numeroConto = new Random().nextInt(1, 1001);
         this.nomeProprietario = nomeProprietario;
         this.saldo = 0;
     }

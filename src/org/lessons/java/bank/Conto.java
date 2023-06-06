@@ -65,5 +65,4 @@ public class Conto {
             System.out.println("Saldo disponibile: " + getSaldoFormattato() + "\n");
         }
     }
-
 }

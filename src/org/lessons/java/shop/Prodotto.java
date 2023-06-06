@@ -9,7 +9,7 @@ public class Prodotto {
     private int codice;
     private String nome;
     private String descrizione;
-    private double prezzo;
+    private double prezzo; //per i prezzi meglio usare il tipo BigDecimal (per fare le operazioni sarà necessario usare dei metodi)
     private int iva;
 
     //COSTRUTTORE
